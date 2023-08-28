@@ -13,6 +13,7 @@ public class AppTest
 
     /**
      * Starts the server on port 9001, and pauses thread for 3 seconds to let it spin up.
+     * we use port 9001 so that the test and application can both run simultaneously (they could not be able to run on the same port)
      * @throws InterruptedException
      */
     @Before
@@ -33,6 +34,7 @@ public class AppTest
     /**
      * This test will use curl to send a GET request to the Javalin server looking for the "Hello, World" response.
      * Curl is a command that can be used in the terminal to send HTTP requests.
+     * we use port 9001 so that the test and application can both run simultaneously (they could not be able to run on the same port)
      */
     @Test
     public void shouldAnswerWithTrue()
